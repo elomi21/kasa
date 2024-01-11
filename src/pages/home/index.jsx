@@ -1,11 +1,13 @@
-
 import "../../styles/App.scss";
+import Banner from "../../components/Banner/index";
+import Card from "../../components/Card/index";
 
 function Home() {
   return (
-    <div className="App">
-      <p>coucou!!</p>
-    </div>
+    <>
+      <Banner />
+      <Card />
+    </>
   );
 }
 

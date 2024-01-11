@@ -1,0 +1,25 @@
+.k-f {
+  margin: 50px auto 0px auto;
+  background-color: black;
+  &-c {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 28.56px;
+    padding-top: 66px;
+    padding-bottom: 29px;
+    &-img {
+      max-height: 39.4px;
+    }
+    &-p {
+      text-align: center;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 142.6%;
+      margin: 0%;
+      letter-spacing: 5px;
+    }
+  }
+}

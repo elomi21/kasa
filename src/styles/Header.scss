@@ -1,22 +1,23 @@
 .k-nav {
   margin: 45px auto 0px auto;
-  max-width: 85%;
+  max-width: 74%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border:1px #FF6060 solid;
-  .k-nav-link {
+  &-link {
     display: flex;
     align-items: flex-start;
     gap: 57px;
+    font-size: 24px;
+    font-weight: 500;
     a {
         text-decoration: none;
         color:#FF6060;
     }
-    a:hover {
-        text-decoration: underline;
-        color: #FF6060;
+    .active{
+      text-decoration: underline;
+      color: #FF6060;
     }
   }
 }

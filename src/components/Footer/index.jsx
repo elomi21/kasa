@@ -1,12 +1,16 @@
-import Gmlogo from '../../assets/logokasaB.svg'
+import Gmlogobw from '../../assets/logokasaB-bw.svg'
+import "../../styles/Footer.scss";
+
 
 function Footer() {
     return (
-        <footer>
-            <img src={ Gmlogo } alt="logo-kasa" />
-           <p>© 2020 Kasa. All rights reserved</p>
-        </footer>
-    )
+      <footer className="k-f">
+        <div className='k-f-c'>
+          <img src={Gmlogobw} alt="logo-kasa" className="k-f-c-img" />
+          <p className="k-f-c-p">© 2020 Kasa. All rights reserved</p>
+        </div>
+      </footer>
+    );
 }
  
 export default Footer
