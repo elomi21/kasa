@@ -1,0 +1,27 @@
+@import "./Main.scss";
+
+.container-k-e {
+    @include flex-dir-col;
+    gap:139px;
+    margin: 139px auto 139px auto;
+  .k-e-title {
+    color: $main-color;
+    text-align: center;
+    font-size: 288px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .k-e-subtitle {
+    color: $main-color;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .k-e-link {
+    color: $main-color;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+}

@@ -1,9 +1,13 @@
-import "../../styles/App.scss";
+import Banner from "../../components/Banner/index"
+import Banimgabout from "../../assets/ban-img-about.png"
+import Collapse from "../../components/Collapse";
 
 function About() {
   return (
     <>
-      <p>About!!</p>
+      <Banner img={Banimgabout} />
+      <Collapse />
+      
     </>
   );
 }

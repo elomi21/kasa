@@ -1,11 +1,13 @@
-.k-b {
+@import "./Main.scss";
+
+.container-k-b {
   max-width: 74%;
   margin: 50px auto 43px auto;
   max-height: 223px;
   border-radius: 25px;
   position: relative;
 
-  &-img {
+  .k-b-img {
     object-fit: cover;
     max-height: 223px;
     width: 100%;
@@ -13,16 +15,13 @@
     border: none;
     filter: brightness(0.7);
   }
-  &-title {
+  .k-b-title {
     margin: 0%;
     position: absolute;
-    color: white;
+    color: $white        ;
     font-size: 48px;
     font-weight: 500;
     top: 36.85%;
     left: 28.85%;
-    
-    
-   
   }
 }

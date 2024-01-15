@@ -1,5 +1,5 @@
 import Gmlogobw from '../../assets/logokasaB-bw.svg'
-import "../../styles/Footer.scss";
+import "../../styles/index.scss";
 
 
 function Footer() {

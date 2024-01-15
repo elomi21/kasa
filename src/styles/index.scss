@@ -1,7 +1,11 @@
-body {
-  margin: 0;
-  font-size: 1em;
-  font-family: -apple-system, BlinkMacSystemFont, 'Montserrat',
-}
+
+@import "./Main.scss";
+@import "./Header.scss";
+@import "./Footer.scss";
+@import "./Banner.scss";
+@import "./Card.scss";
+@import "./Slideshow.scss";
+@import "./Collapse.scss";
+@import "./Error.scss"
 
 

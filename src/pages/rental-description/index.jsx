@@ -1,11 +1,9 @@
-import "../../styles/App.scss";
-
-
+import Slideshow from "../../components/Slideshow";
 
 function Rentaldescription() {
   return (
     <>
-      
+      <Slideshow />
     </>
   );
 }

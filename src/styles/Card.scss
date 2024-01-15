@@ -1,4 +1,6 @@
-.k-gallery {
+@import "./Main.scss";
+
+.container-k-gallery {
   margin: 0px auto 0px auto;
   max-width: 68.5%;
   padding: 56px 50px 43px 50px;
@@ -7,7 +9,7 @@
   grid-template-rows: 1fr 1fr;
   row-gap: 50px;
   column-gap: 60px;
-  background-color: #f6f6f6;
+  background-color: $second-color;
   border-radius: 25px;
   .k-c {
     height: 340px;
@@ -36,7 +38,7 @@
 
     &-title {
       position: absolute;
-      color: rgb(255, 255, 255);
+      color: $white;
       font-size: 18px;
       font-style: normal;
       font-weight: 500;

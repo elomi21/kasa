@@ -1,13 +1,15 @@
-import "../../styles/App.scss";
 import Banner from "../../components/Banner/index";
 import Card from "../../components/Card/index";
+import Banimg from "../../assets/ban-img-home.png";
 
 function Home() {
   return (
-    <>
-      <Banner />
-      <Card />
-    </>
+    <main>
+      <>
+        <Banner title="Chez vous, partout et ailleurs" img={Banimg} />
+        <Card />
+      </>
+    </main>
   );
 }
 

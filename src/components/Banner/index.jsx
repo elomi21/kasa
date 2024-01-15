@@ -1,13 +1,11 @@
-import Banimg from "../../assets/ban-img.png";
-import "../../styles/Banner.scss";
+import "../../styles/index.scss";
 
-function Banner() {
+function Banner({ title, img }) {
   return (
-    <div className="k-b">
-      <img src={Banimg} alt="banner" className="k-b-img"/>
-      <h1 className="k-b-title">Chez vous, partout et ailleurs</h1>
+    <div className="container-k-b">
+      <img src={img} alt="banner" className="k-b-img" />
+      <h1 className="k-b-title">{title}</h1>
     </div>
   );
 }
 export default Banner;
-
