@@ -1,0 +1,58 @@
+@import "../../styles/Main.scss";
+
+.container-k-b {
+  max-width: 74%;
+  margin: 50px auto 43px auto;
+  max-height: 223px;
+  border-radius: 25px;
+  position: relative;
+
+  .k-b-img {
+    object-fit: cover;
+    max-height: 223px;
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    filter: brightness(0.7);
+  }
+  .k-b-title {
+    position: absolute;
+    color: $white;
+    font-size: 48px;
+    font-weight: 500;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container-k-b {
+    max-width: 80%;
+    .k-b-title {
+      font-size: 36px;
+      white-space: wrap;
+      right: -69px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-k-b {
+    max-width: 100%;
+    max-height: 111px;
+    margin: 19px 19px;
+    .k-b-img {
+      max-height: 111px;
+    }
+    .k-b-title {
+      font-size: 24px;
+      white-space: wrap;
+      bottom: 0px;
+      left: 35%;
+      top: 50%;
+      right: 6%;
+    }
+  }
+}

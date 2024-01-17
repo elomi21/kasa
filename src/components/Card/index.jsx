@@ -1,26 +1,20 @@
 import { NavLink } from "react-router-dom";
 import "../../styles/index.scss";
-import Dataloc from "../../servay/dataloc.json";
 
-const dataloc = Dataloc;
-
-function Card() {
+function Card({ id , title, cover }) {
   return (
-    <div className="container-k-gallery">
-      {dataloc.map((data) => (
-        <NavLink to={`/rental-description/${data.id}`} key={data.id}>
-          <ul>
-            <li className="k-c" key={data.id}>
-              <img src={data.cover} alt={data.title} className="k-c-img" />
-              <div className="k-c-filter" />
-              <h3 className="k-c-title">{data.title}</h3>
-            </li>
-          </ul>
+    <>
+      <ul>
+        <NavLink to={`/rental-description/${id}`} >
+          <li className="k-c" key={id}>
+            <img src={cover} alt={title} className="k-c-img" />
+            <div className="k-c-filter" />
+            <h3 className="k-c-title">{title}</h3>
+          </li>
         </NavLink>
-      ))}
-    </div>
+      </ul>
+    </>
   );
-  
 }
 
 export default Card;

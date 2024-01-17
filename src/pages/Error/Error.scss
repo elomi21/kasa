@@ -1,0 +1,53 @@
+@import "../../styles/Main.scss";
+
+.container-k-e {
+  @include flex-dir-col;
+  gap: 139px;
+  margin: 139px auto 139px auto;
+  .k-e-title {
+    color: $main-color;
+    text-align: center;
+    font-size: 288px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .k-e-subtitle {
+    color: $main-color;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .k-e-link {
+    color: $main-color;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-k-e {
+    gap: 113px;
+    margin: 113px auto 113px auto;
+    .k-e-title {
+      font-size: 96px;
+      font-style: normal;
+      font-weight: 700;
+    }
+    .k-e-subtitle {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      text-align: center;
+      line-height: 142.6%;
+      padding: 0 19px;
+    }
+    
+    .k-e-link {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+    }
+  }
+}

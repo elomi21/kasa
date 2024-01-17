@@ -1,26 +1,29 @@
 import "../../styles/index.scss";
-import Colarrow from "../../assets/arrow_back_ios-24px 2.svg"
+import Colarrow from "../../assets/arrow_back_ios-24px 2.svg";
+import React, { useState } from "react";
 
-function Collapse() {
-    
-    return (
-      <div className="container-collapse">
-        <div className="collapse-title-arrow">
-          <h2 className="collapse-title">blabla</h2>
-          <img src={Colarrow} className="collapse-arrow" alt="collapse-arrow"/>
-        </div>
-        <div className="collapse-content">
-          <ul className="k-col-group">
-            <li className="k-col-group-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In nisi
-              illum iusto beatae error velit illo soluta quas, rerum maiores
-              magnam distinctio libero vitae numquam tempore inventore qui
-              delectus dolores.
-            </li>
-          </ul>
-        </div>
-      </div>
-    );
+function Collapse({ title, content, id }) {
+  const [visible, setVisible] = useState(false);
+
+  function HandleMoreClick() {
+    setVisible(!visible);
+  }
+
+  return (
+    <>
+      <ul key={id}>
+        <li className="col-title-arrow" onClick={HandleMoreClick}>
+          <h3 className="col-t">{title}</h3>
+          <img
+            src={Colarrow}
+            alt="logo-arrow"
+            className={`logo-arrow ${visible ? "open" : ""} `}
+          />
+        </li>
+        <li className={`col-content ${visible ? "visible" : ""}`}>{content}</li>
+      </ul>
+    </>
+  );
 }
 
 export default Collapse;

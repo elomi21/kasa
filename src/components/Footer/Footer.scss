@@ -1,4 +1,4 @@
-@import "./Main.scss";
+@import "../../styles/Main.scss";
 .k-f {
   margin: 50px auto 0px auto;
   background-color: $black;
@@ -19,6 +19,21 @@
       line-height: 142.6%;
       margin: 0%;
       letter-spacing: 5px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .k-f{
+    margin:27px auto 0px auto;
+    &-c{
+      max-width: 134px;
+      margin: 0px auto;
+      padding-bottom: 58px;
+      row-gap: 13px;
+      &-p{
+        font-size: 13px;
+        letter-spacing: 0px;
+      }
     }
   }
 }

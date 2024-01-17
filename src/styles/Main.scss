@@ -27,3 +27,9 @@ li {
   flex-direction: column;
   align-items: center;
 }
+
+@mixin arrow-position() {
+  position: absolute;
+  top: 7px;
+  right: 15px;
+}

@@ -1,0 +1,88 @@
+@import "../../styles/Main.scss";
+
+.container-collapse {
+  max-width: 62.77%;
+  align-items: center;
+  margin: 0px auto 0px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .col-title-arrow {
+    max-width: 100%;
+    padding: 10px 20px;
+    position: relative;
+    background-color: $main-color;
+    border-radius: 5px;
+    color: $white;
+    z-index: 2;
+
+    .col-t {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+    }
+    .logo-arrow {
+      @include arrow-position();
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .open {
+      transform: rotate(-180deg);
+    }
+  }
+
+  .col-content {
+    padding: 0 20px;
+    max-height: 0;
+    opacity: 0;
+    background-color: $second-color;
+    border-radius: 0px 0px 5px 5px;
+    color: $main-color;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out,
+      padding 0.5s ease-in-out;
+  }
+  .visible {
+    padding-top: 16px;
+    padding-bottom: 20px;
+    max-height: 500px;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container-collapse {
+    max-width: 80%;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-collapse {
+    max-width: 100%;
+    margin: 0 19px 19px 19px;
+    gap: 20px;
+    .col-title-arrow {
+      padding: 10px 10px;
+
+      .col-t {
+        font-size: 13px;
+      }
+      .logo-arrow{
+      top: 5px;
+      width: 24px;
+      height:24px;
+    }
+    }
+    .col-content {
+      font-size: 12px;
+    }
+    .visible {
+      padding-top: 10px;
+      padding-bottom: 19px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import "../../styles/Main.scss";
+
+.k-nav {
+  margin: 45px auto 50px auto;
+  max-width: 74%;
+  @include flex-dir-row();
+  justify-content: space-between;
+  &-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 57px;
+    font-size: 24px;
+    font-weight: 500;
+    a {
+      text-decoration: none;
+      color: $main-color;
+
+      .active {
+        text-decoration: underline;
+        color: $main-color;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .k-nav {
+    max-width: 100%;
+    justify-content: space-between;
+    margin:20px 0px 27px 0px;
+    padding: 0px 19px;
+    &-logo {
+      max-height:46px;
+    }
+    &-link {
+      font-size:12px;
+      gap:26px;
+    }
+  }
+}

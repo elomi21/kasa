@@ -1,11 +1,11 @@
 
 @import "./Main.scss";
-@import "./Header.scss";
-@import "./Footer.scss";
-@import "./Banner.scss";
-@import "./Card.scss";
-@import "./Slideshow.scss";
-@import "./Collapse.scss";
-@import "./Error.scss"
+@import "./../components/Header/Header.scss";
+@import "./../components/Footer/Footer.scss";
+@import "./../components/Banner/Banner.scss";
+@import "./../components/Card/Card.scss";
+@import "./../components/Slideshow/Slideshow.scss";
+@import "./../components/Collapse/Collapse.scss";
+@import "./../pages/error/Error.scss"
 
 
