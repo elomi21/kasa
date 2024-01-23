@@ -1,27 +1,58 @@
 @import "../../styles/Main.scss";
 
 .container-k-carousel {
-  width: 1240px;
+  max-width: 1240px;
   max-height: 415px;
   margin: 0px auto 30px auto;
   position: relative;
 
-
   .k-sl-al {
     position: absolute;
     top: 156.7px;
-    left: 0px;
-    background-color: black;
+    left: 23px;
   }
   .k-sl-ar {
     position: absolute;
     top: 156.7px;
-    right: 0px;
-    background-color: black;
+    right: 23px;
   }
+  
   .k-sl-slide {
+    border-radius: 10px;
     object-fit: cover;
     width: 100%;
     max-height: 415px;
+  }
+  .k-sl-counter {
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    bottom: 25px;
+    left: 49%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-k-carousel {
+    max-width: 100%;
+    margin: 0 19px 19px 19px;
+    gap: 20px;
+
+    .k-sl-al {
+      width: 24px;
+      height: 24px;
+      top: 45%;
+      left: 1%;
+    }
+    .k-sl-ar {
+      width: 24px;
+      height: 24px;
+      top: 45%;
+      right: 1%;
+    }
+    .k-sl-counter {
+      display: none;
+    }
   }
 }

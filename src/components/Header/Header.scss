@@ -14,12 +14,11 @@
     a {
       text-decoration: none;
       color: $main-color;
-
-      .active {
+    }
+    .active {
         text-decoration: underline;
         color: $main-color;
       }
-    }
   }
 }
 

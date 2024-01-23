@@ -10,10 +10,17 @@ function Home() {
     <main>
       <>
         <Banner title="Chez vous, partout et ailleurs" img={Banimg} />
-        <div className="container-k-gallery">
-          {dataloc.map((data) => (
-            <Card key={data.id} cover={data.cover} title={data.title} />
-          ))}
+        <div>
+          <ul className="container-k-gallery">
+            {dataloc.map((data) => (
+              <Card
+                key={data.id}
+                id={data.id}
+                cover={data.cover}
+                title={data.title}
+              />
+            ))}
+          </ul>
         </div>
       </>
     </main>
