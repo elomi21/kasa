@@ -131,4 +131,7 @@
   flex-direction: column;
   gap: 20px;
   padding: 0px 19px;
+  li:last-child{
+    padding: 0px;
+  }
 }

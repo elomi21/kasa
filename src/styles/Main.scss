@@ -15,9 +15,8 @@ $black: #000000;
 
 li {
   list-style-type: none;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
 }
-
 
 
 @mixin flex-dir-row() {
@@ -48,4 +47,11 @@ li {
   width: 24px;
   height: 24px;
   top: 45%;
+}
+
+@media screen and (max-width: 767px) {
+
+li {
+  padding-bottom: 8px;
+}
 }
