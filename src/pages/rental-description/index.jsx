@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import Slideshow from "../../components/Slideshow";
 import Collapse from "../../components/Collapse";
+import Ratingstar from "../../components/Ratingstar";
 import Dataloc from "../../servay/dataloc.json";
 
 function Rentaldescription() {
@@ -53,9 +54,10 @@ console.log(rentalObject)
               alt="identité de l'hôte"
             />
           </div>
+          <Ratingstar value={rentalObject[0].rating} />
         </div>
       </div>
-      <div className="container-collapse">
+      <div className="container-double-collapse">
         <Collapse title="Description" content={rentalObject[0].description} />
         <Collapse
           title="Equipements"

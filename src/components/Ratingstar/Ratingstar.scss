@@ -1,0 +1,22 @@
+@import "../../styles/Main.scss";
+
+.container-star {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  .star-picture {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-star {
+    gap: 4px;
+    .star-picture {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}

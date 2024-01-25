@@ -2,7 +2,6 @@
 
 .r-d-container {
   max-width: 1240px;
-  border: 1px solid red;
   margin: 0px auto 0px auto;
   display: flex;
   flex-direction: row;
@@ -27,25 +26,32 @@
     .r-d-tags {
       display: flex;
       flex-direction: row;
+      align-items: center;
       gap: 10px;
       margin: 20px 0px 24px 0px;
       .r-d-tag {
-        padding:3px 30px;
+        padding: 3px 20px;
         border-radius: 10px;
         background: $main-color;
         text-align: center;
         color: $white;
+        font-size: 14px;
         line-height: 142.6%;
       }
     }
   }
   .r-d-right {
-    &-identity{
-        display: flex;
-        max-width: 143px;
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 21px;
+
+    &-identity {
+      display: flex;
+      max-width: 143px;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
     }
     &-name {
       color: $main-color;
@@ -61,4 +67,68 @@
       border-radius: 50%;
     }
   }
+}
+.container-double-collapse {
+  max-width: 1240px;
+  margin: 0px auto 0px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 76px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .r-d-container {
+    margin: 0 30px 19px 30px;
+  }
+
+  .container-double-collapse {
+    margin: 0px 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .r-d-container {
+    padding: 0px 19px;
+    margin-bottom: 13.5px;
+    display: flex;
+    flex-direction: column;
+
+    .r-d-left {
+      max-width: 100%;
+      .r-d-title {
+        font-size: 18px;
+      }
+      .r-d-subtitle {
+        font-size: 10px;
+      }
+      .r-d-tags {
+        max-width: 100%;
+        .r-d-tag {
+          font-size: 10px;
+          padding: 3px 15px;
+        }
+      }
+    }
+    .r-d-right {
+      max-width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+      &-identity {
+        max-width: 136px;
+      }
+      &-name {
+        font-size: 12px;
+      }
+      &-img {
+        max-width: 32px;
+        max-height: 32px;
+      }
+    }
+  }
+}
+.container-double-collapse {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 19px;
 }
