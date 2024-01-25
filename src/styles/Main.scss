@@ -17,6 +17,8 @@ li {
   list-style-type: none;
 }
 
+
+
 @mixin flex-dir-row() {
   display: flex;
   flex-direction: row;
@@ -29,8 +31,20 @@ li {
   align-items: center;
 }
 
+// Collapse
 @mixin arrow-position() {
   position: absolute;
   top: 7px;
   right: 15px;
+}
+
+// Slideshow
+@mixin k-s-a-desktop {
+  position: absolute;
+  top: 156.7px;
+}
+@mixin k-s-a-mobil {
+  width: 24px;
+  height: 24px;
+  top: 45%;
 }

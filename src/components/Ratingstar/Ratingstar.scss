@@ -1,22 +1,19 @@
 @import "../../styles/Main.scss";
 
-.container-star {
-  border: 1px solid red;
+.rating-star {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  .star-picture {
-    width: 36px;
-    height: 36px;
+  .star {
+    height: 24px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .container-star {
+  .rating-star {
     gap: 4px;
-    .star-picture {
-      width: 14px;
-      height: 14px;
+    .star {
+      height: 12px;
     }
   }
 }

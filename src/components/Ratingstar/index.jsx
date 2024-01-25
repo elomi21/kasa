@@ -9,11 +9,16 @@ function RatingStar({ value }) {
     
     return (
       <>
-          <div className="rating-star">
+        <div className="rating-star">
           {[...Array(5)].map((_, index) => (
-            <img key={index} src={index <  value  ? Starred : Stargrey } alt="star"/>
-            ))}
-          </div>
+            <img
+              className="star"
+              key={index}
+              src={index < value ? Starred : Stargrey}
+              alt="star"
+            />
+          ))}
+        </div>
       </>
     );
 }

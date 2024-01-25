@@ -7,13 +7,11 @@
   position: relative;
 
   .k-sl-al {
-    position: absolute;
-    top: 156.7px;
+    @include k-s-a-desktop();
     left: 23px;
   }
   .k-sl-ar {
-    position: absolute;
-    top: 156.7px;
+    @include k-s-a-desktop();
     right: 23px;
   }
 
@@ -25,7 +23,7 @@
   }
   .k-sl-counter {
     position: absolute;
-    color: white;
+    color: $white;
     text-align: center;
     font-size: 18px;
     bottom: 25px;
@@ -46,15 +44,11 @@
     gap: 20px;
 
     .k-sl-al {
-      width: 24px;
-      height: 24px;
-      top: 45%;
+      @include k-s-a-mobil();
       left: 1%;
     }
     .k-sl-ar {
-      width: 24px;
-      height: 24px;
-      top: 45%;
+      @include k-s-a-mobil();
       right: 1%;
     }
     .k-sl-slide {

@@ -13,7 +13,6 @@ function Rentaldescription() {
 
   // on filtre Dataloc pour récupérer l'object rental correspondant à l'Id de la page
   const rentalObject = Dataloc.filter((rental) => rental.id === pageId);
-console.log(rentalObject)
   //on utilise useNavigate pour rediriger vers vers la page error.
   const navigate = useNavigate();
 
@@ -29,7 +28,7 @@ console.log(rentalObject)
   }
 
   const pictureSlide = rentalObject[0].pictures;
-
+  const hostName = rentalObject[0].host.name.split(" ");
   return (
     <>
       <Slideshow pictures={pictureSlide} alt="photo de la location" />
@@ -47,7 +46,10 @@ console.log(rentalObject)
         </div>
         <div className="r-d-right">
           <div className="r-d-right-identity">
-            <p className="r-d-right-name">{rentalObject[0].host.name}</p>
+            <div className="r-d-right-name">
+              <p>{hostName[0]}</p>
+              <p>{hostName[1]}</p>
+            </div>
             <img
               className="r-d-right-img"
               src={rentalObject[0].host.picture}
@@ -61,11 +63,10 @@ console.log(rentalObject)
         <Collapse title="Description" content={rentalObject[0].description} />
         <Collapse
           title="Equipements"
-          content={rentalObject[0].equipments.map((equipment, i) => (
-            <ul>
-              <li key={i}>{equipment}</li>
-            </ul>
+          content={rentalObject[0].equipments.map((equipment, id) => (
+           <li key={id}>{equipment}</li>
           ))}
+          
         />
       </div>
     </>
