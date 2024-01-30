@@ -2,7 +2,7 @@
 
 .r-d-container {
   max-width: 1240px;
-  margin: 0px auto 0px auto;
+  margin: 0px auto;
   padding:0px 19px;
   display: flex;
   flex-direction: row;
@@ -97,10 +97,12 @@
         font-size: 18px;
       }
       .r-d-subtitle {
-        font-size: 10px;
+        padding-top: 8px;
+        font-size: 14px;
       }
       .r-d-tags {
         max-width: 100%;
+        margin: 10px 0px 18px 0px;
         .r-d-tag {
           font-size: 10px;
           padding: 3px 15px;
